@@ -1,0 +1,205 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img{
+    height: 100%;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #eaf4f2ec;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    position: fixed;
+    width: 100vw;
+
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 30px;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+/* Hero section styles */
+.hero {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      background-image: 
+    /* top, transparent red */
+    linear-gradient(
+      rgba(0, 213, 255, 0.186), 
+      rgba(0, 255, 255, 0.168)
+    ),
+    /* your image */
+    url('https://thumbs.dreamstime.com/b/doctor-medical-background-24834402.jpg');
+    /* background-image: url('https://thumbs.dreamstime.com/b/doctor-medical-background-24834402.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+.hero-content p{
+    margin-bottom: 25px;
+}
+.cta-button {
+    background-color: #41493c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #32382f;
+}
+
+/* Service section styles */
+.services {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.service {
+    margin: 20px;
+}
+
+.service img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Doctors section styles */
+.doctors {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.doctors h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.doctor {
+    margin: 20px;
+}
+
+.doctor img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+/* Footer styles */
+footer {
+    background-color: #41493c;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+label {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+textarea{
+    min-height: 150px; /* Adjust as needed */
+}
+
+button {
+    background-color: #41493c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+footer {
+    background-color: #343a30;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media query for screens with a width of 768px or less */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+@media (max-width: 800px) {
+    .logo{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+}

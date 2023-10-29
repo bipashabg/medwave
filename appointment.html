@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="appointment.css">
+    <link rel="stylesheet" href="home4.css">
+    <title>Appointment Form</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Untitledbg_home.png" alt="Medical Logo">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Doctors</a></li>
+                <li><a href="#">Appointments</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h1>Appointment Request</h1>
+        <form action="submit_appointment.php" method="post">
+            <label for="name">Your Name:</label>
+            <input placeholder="Enter your name" type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input placeholder="email@email.com" type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input placeholder="+91 XXXXX XXXXX" type="tel" id="phone" name="phone" required>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="message">Additional Comments:</label>
+            <textarea placeholder="Any other queries, if any" id="message" name="message"></textarea>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+</body>
+</html>

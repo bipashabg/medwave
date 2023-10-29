@@ -1,0 +1,41 @@
+#heading
+{
+    color: #86CFCB;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.chip1{
+    width: 384px;
+    height: 247px;
+    background-color: rgb(238, 238, 238);
+    border: 0.1px solid rgb(238, 238, 238);
+    border-radius: 20px;
+    padding-left:30px;
+    margin: 20px;
+    
+}
+#edit{
+    margin-top: 30px;
+    width: 90%;
+    height: 37px;
+    border-radius: 10px;
+}
+.chip2{
+    width: 480px;
+    height: 632px;
+    background: #FCF3FC;
+    margin: 20px;
+    border-radius: 50px;
+    text-align: center;     
+}
+.rows{
+    width: 407px;
+    height: 34px;
+    background: #F8CBDE;
+    margin: 40% 10px;
+    border-radius: 8px;
+}
